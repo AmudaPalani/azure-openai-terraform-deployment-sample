@@ -18,3 +18,23 @@ variable "scale_type" {
   description = "values: GlobalStandard, Standard"
   default = "GlobalStandard"
 }
+
+variable "resource_group_name" {
+  description = "The name of the resource group"
+  type        = string
+}
+
+variable "storage_account_name" {
+  description = "The name of the storage account"
+  type        = string
+}
+
+variable "container_name" {
+  description = "The name of the container"
+  type        = string
+}
+
+variable "key" {
+  description = "The name of the state file"
+  type        = string
+}
