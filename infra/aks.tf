@@ -20,7 +20,7 @@ module "aks" {
   agents_count                      = null # Please set `agents_count` `null` while `enable_auto_scaling` is `true` to avoid possible `agents_count` changes.
   agents_max_pods                   = 100
   agents_pool_name                  = "system"
-  agents_availability_zones         = ["1", "2"]
+  agents_availability_zones         = ["1"]
   agents_type                       = "VirtualMachineScaleSets"
   agents_size                       = "Standard_D3_v2"
   workload_identity_enabled         = true
