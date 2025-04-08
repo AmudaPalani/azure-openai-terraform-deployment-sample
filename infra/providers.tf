@@ -19,10 +19,6 @@ provider "random" {}
 data "azurerm_client_config" "current" {}
 
 provider "azurerm" {
-  tenant_id       = var.azure_tenant_id
-  subscription_id = var.azure_subscription_id
-  client_id       = var.azure_client_id
-  client_secret   = var.azure_client_secret
-  skip_provider_registration = true
   features {}
+  use_oidc = true
 }
