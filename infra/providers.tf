@@ -14,10 +14,10 @@ terraform {
   }
   # Update this block with the location of your terraform state file
   backend "azurerm" {
-    resource_group_name  = var.storage_rg_name
-    storage_account_name = var.storage_account_name
-    container_name       = var.storage_container_name
-    key                  = var.storage_key
+    resource_group_name  = "def_ai_rg"
+    storage_account_name = "tfstate09192024"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate.azure.ai.iac"
 
     use_oidc             = true
   }
