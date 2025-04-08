@@ -14,9 +14,7 @@ terraform {
   }
 }
 
-provider "random" {
-  version = "~> 2.2"
-}
+provider "random" {}
 
 data "azurerm_client_config" "current" {}
 
