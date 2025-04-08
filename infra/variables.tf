@@ -1,6 +1,6 @@
 variable "region" {
   type    = string
-  default = "eastus"
+  default = "centralus"
 }
 
 variable "chat_model_name" {
