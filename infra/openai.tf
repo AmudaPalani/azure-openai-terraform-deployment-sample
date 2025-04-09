@@ -2,7 +2,7 @@ module "openai" {
   source              = "Azure/openai/azurerm"
   version             = "0.1.3"
   resource_group_name = azurerm_resource_group.this.name
-  location            = "eastus"
+  location            = "westus3"
   private_endpoint = {
     "pe_endpoint" = {
       private_dns_entry_enabled       = true
